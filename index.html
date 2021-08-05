@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>churrascômetro</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <main>
+        
+        <div class="reparticao">
+            <p>Dificuldade para calcular a quantidade de bebida e carne para um churras de sucesso? Indique o número de convidados e o tempo de duração do evento para saber o necessário!
+        </div>
+
+        <div class="container">
+            <h1>Churrascômetro</h1>
+            <input type="number" name="adultos" id="adultos" placeholder="Adultos" title="Quantidade de adultos">
+            <input type="number" name="criancas " id="criancas" placeholder="Crianças" title="Quantidade de crianças">
+            <input type="number" name="duracao" id="duracao" placeholder="Duração/hrs" title="Duração do evento">
+            <button onclick="calcular()">Calcular</button>
+
+            <div id="resultado"></div>
+        </div>
+
+        <div class="reparticao">
+            <h2>entenda o cálculo</h2>
+            <p>
+                Se o evento tiver a duração de até 6 horas, cada convidado consumirá em média 400g de carne, 1 litro e 200ml de cerveja (com exceção dos menores de 18 anos) e 1 litro e 200ml de refrigerante ou outra bebida. Se durar mais de 6hrs, o consumo muda para 650g de carne, 2 litros de cerveja e 1 litro e meio de refrigerante por pessoa. (Crianças consomem tudo pela metade.)
+            </p>
+        </div>
+
+    </main>
+    <script src="js/index.js"></script>
+</body>
+</html>
